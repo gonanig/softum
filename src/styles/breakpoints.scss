@@ -1,0 +1,19 @@
+$lg: 1440px;
+$lp: 992px;
+$mob: 767px;
+
+@mixin for-large-up {
+  @media screen and(max-width: $lg) and(min-width: $lp) {
+    @content;
+  }
+}
+@mixin for-tablet {
+  @media screen and(max-width: $lp) and(min-width: $mob) {
+    @content;
+  }
+}
+@mixin for-large-down {
+  @media screen and(max-width:$mob) {
+    @content;
+  }
+}

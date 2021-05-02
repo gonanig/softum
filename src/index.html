@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wheel of fortune</title>
+    <link rel="stylesheet" href="./styles/styles.css" />
+   
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js "></script>
+    <script src=" https://cdnjs.cloudflare.com/ajax/libs/web-animations/2.2.2/web-animations.min.js "></script>
+
+    <script>
+      let wow = new WOW({
+        boxClass: "wow",
+        animateClass: "animated",
+        offset: 0,
+        mobile: false,
+      });
+      wow.init();
+    </script>
+
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://yui.yahooapis.com/3.18.1/build/cssnormalize/cssnormalize-min.css"
+    />
+    <script src="./script/wow.min.js"></script>
+  </head>
+  <body>
+    <div id="app">
+      
+        <img
+          class="title wow animate__animated animate__bounce"
+          src="./img/TRY2.png"
+          alt="Try your fortune"
+          data-wow-iteration="2"
+        />
+      
+ <div class="box">
+      <img class="marker" src="./img/picker.png" alt="Marker" />
+      <img class="wheel" src="./img/wheel.png" alt="Wheel" />
+
+    </div>
+
+      <img
+        class="button wow animate__animated animate__heartBeat"
+        data-wow-duration="1s"
+        data-wow-iteration="3"
+        src="./img/spin_normal.png"
+        alt="Button"
+      />
+    </div>
+    <div id="popup" class="popup">
+      <div class="popup__body">
+        <div class="popup__content">
+          <a href="#" class="popup__close">X</a>
+        
+          <img class="popup__text"
+      ></img>
+          <img class="popup__image"
+          ></img>
+         <img class="popup__btn button "
+        src="./img/restart_normal.png" alt="Btn restart">
+        </div>
+      </div>
+    </div>
+    <script src="./script/index.js"></script>
+  </body>
+</html>

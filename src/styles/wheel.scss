@@ -1,0 +1,52 @@
+.marker {
+  position: absolute;
+  width: 60px;
+  left: 45%;
+  top: 5%;
+  z-index: 2;
+  @include for-tablet {
+    top: -5%;
+  }
+  @include for-large-down {
+    top: -8%;
+  }
+  @include for-large-up {
+    left: 48%;
+    top: -3%;
+  }
+  @include for-large-up {
+    left: 45%;
+  }
+}
+
+.wheel {
+  width: 100%;
+  height: 100%;
+}
+.box {
+  position: relative;
+  @include for-large-down {
+    margin: 20px;
+  }
+  @include for-tablet {
+    margin: 50px;
+  }
+  @include for-large-up {
+    width: 500px;
+    height: 500px;
+  }
+}
+.blur {
+  animation: blur 7s;
+}
+@keyframes blur {
+  0% {
+    filter: blur(1.5px);
+  }
+  80% {
+    filter: blur(1.5px);
+  }
+  100% {
+    filter: blur(0);
+  }
+}

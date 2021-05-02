@@ -1,0 +1,43 @@
+@import "./variables.scss";
+@import "./breakpoints.scss";
+@import "./wheel.scss";
+@import "./button.scss";
+@import "./popup.scss";
+body {
+  background-color: $grey;
+}
+#app {
+  // width: 500px;
+  // height: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 20px;
+
+  @include for-tablet {
+    height: 100%;
+    margin: 0;
+    max-width: 991px;
+  }
+  @include for-large-down {
+    width: 500px;
+    overflow-x: hidden;
+    margin: 0;
+    height: 100%;
+  }
+}
+.title {
+  margin: 40px auto;
+  height: 100px;
+  justify-content: center;
+
+  @include for-tablet {
+    margin-top: 40px;
+    margin-bottom: 0;
+    height: 80px;
+  }
+  @include for-large-down {
+    height: 70px;
+    margin-top: 20px;
+  }
+}
